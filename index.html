@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Studio Chat</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="giftbox.js" defer></script>
+</head>
+<body>
+    <!-- Video Section -->
+    <div id="video-container">
+        <video id="localVideo" autoplay playsinline muted></video>
+    </div>
+
+    <!-- Fullscreen Chat Section for You -->
+    <div id="chat">
+        <div id="messages"></div>
+        <div>
+            <input type="text" id="messageInput" placeholder="Type your message...">
+            <button id="sendMessage">Send</button>
+        </div>
+    </div>
+
+    <!-- Banner Section for Advertisements and Paid Collaborations -->
+    <div id="banner">
+        <p>🔥 Exclusive Studio Access: Pay with Gift Cards to Collab!</p>
+        <button id="collab-button" onclick="window.location.href='wix-store.html'">🎟 Pay to Join</button>
+    </div>
+
+    <!-- Gifts Section -->
+    <div id="gifts">
+        <button id="giftButton">🎁 Send a Gift</button>
+        <div id="giftDropdown">
+            <div class="giftOption" onclick="sendGift(1)">🎁 Gift 1</div>
+        </div>
+    </div>
+</body>
+</html>

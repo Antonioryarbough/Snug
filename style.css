@@ -1,0 +1,42 @@
+/* Fullscreen chat for YOU from the start */
+#chat {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh; /* Full height */
+    background-color: black; /* Dark theme for focus */
+    color: white;
+    overflow-y: auto; /* Scrollable */
+    z-index: 999;
+    display: block; /* Ensure visibility */
+}
+
+/* Hide other users' chat boxes */
+.other-chat {
+    display: none;
+}
+
+/* Preview banner for collaborations & ads */
+#banner {
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    height: 50px;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 1.2em;
+    z-index: 1000;
+}
+
+/* Collab button */
+#collab-button {
+    background-color: #0078d7;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+}
